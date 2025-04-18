@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos generales */
+body {
+    background-image: url('Imagen/finca.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    padding: 10px;
+    line-height: 1.6;
+    color: #000000; /* Marrón oscuro */
+    backdrop-filter: brightness(12.5em); /* Efecto de desenfoque */
+}
+
+/* Encabezados */
+h1, h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: #fdfbf7; /* Marrón café */
+    text-shadow:  7px -2px 18px rgb(6, 5, 4)/* Sombra de texto */
+
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 2em;
+    color: #7b4e29; /* Marrón café */
+    margin-bottom: 15px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #a58772, #75562b);
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+}
+
+/* Navegación */
+nav a {
+    color: rgba(0, 0, 0, 0.85); /* Color del texto */
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 600; /* Negrita */
+    font-size: 16px;
+    padding: calc(.575rem - 0.2px) calc(0.5rem - 0.5px); /* Espaciado interno */
+    background-color: #ffffff12; /* Fondo blanco */
+    border: 1px solid rgba(185, 132, 9, 0.1); /* Borde sutil */
+    border-radius: .8rem; /* Bordes redondeados */
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0; /* Sombra ligera */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 250ms; /* Transición suave */
+    cursor: pointer;
+}
+
+nav a:hover,
+nav a:focus {
+    border-color: rgba(0, 0, 0, 0.15); /* Cambia el color del borde */
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px; /* Sombra más pronunciada */
+    color: rgba(0, 0, 0, 0.65); /* Color del texto más oscuro */
+    transform: translateY(-1px); /* Efecto de elevación */
+}
+
+nav a:active {
+    background-color: #F0F0F1; /* Fondo más claro */
+    border-color: rgba(0, 0, 0, 0.15); /* Color del borde */
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px; /* Sombra más pequeña */
+    color: rgba(0, 0, 0, 0.65); /* Color del texto */
+    transform: translateY(0); /* Sin desplazamiento */
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.banner img {
+    max-width: 100%;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.5s ease-in-out; /* Transición suave */
+}
+
+/* Main */
+main {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #a47d2d; /* Blanco antiguo */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+}
+
+/* Footer */
+footer {
+    background: #8db5ad;
+    color: #0b0b0b;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    border-top: 5px solid #000000;
+}
+
+/* Secciones */
+section {
+    background: linear-gradient(to bottom, #f9f9f9, #e4e1dbc6);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #eaded0; /* Marrón claro */
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    color: #000000; /* Marrón oscuro */
+    font-size: 1em;
+}
+
+/* Mapa */
+.mapa {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mapa iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border: 2px solid #6f4e37; /* Marrón café */
+    border-radius: 10px;
+}
+
+/* Galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease; /* Transición mejorada */
+}
+
+.galeria img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    filter: brightness(1.2); /* Hace la imagen un poco más brillante */
+}
+
+/* Botones */
+.menu-seccion button {
+    background: linear-gradient(45deg, #000000, #9f7844);
+    color: white;
+    border: 1px solid #ffffff; /* Color del borde */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-seccion button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Listas del menú */
+.menu-lista {
+    list-style-type: none; /* Quitar viñetas */
+    padding: 0;
+    margin: 20px 0;
+}
+
+.menu-lista li {
+    font-size: 18px;
+    color: #555555; /* Gris oscuro */
+    margin: 5px 0;
+}
+
+.banner h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+li {
+    font-family: 'libre baskerville', serif;
+    color: #0b0907; /* Color dorado */
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background: linear-gradient(45deg, #09060e, #d2b48c);
+    color: white;
+    border: 1px solid #ffffff; /* Color del borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 25rem; /* Bordes redondeados */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none; /* Elimina subrayado si es un enlace */
+    display: inline-block; /* Asegura que se comporte como un botón */
+    text-align: center; /* Centra el texto */
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
